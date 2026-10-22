@@ -1,0 +1,15 @@
+[project]
+name = "needle-api"
+version = "0.1.0"
+description = "JSON extraction API powered by needle"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cactus-needle[mic]>=3.2.8",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+needle-api = "needle_api.app:run_app"
